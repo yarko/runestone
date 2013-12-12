@@ -31,15 +31,15 @@ options(
 
 @task
 @cmdopts([('all','a','rebuild everything')])
-def everyday(options):
+def blog(options):
     # project-specific pavements have defaults set but we can override here
     params = ["paver", "build", # task name
               "--masterapp", master_app,
               "--masterurl", master_url]
-    if 'all' in options.everyday:
+    if 'all' in options.blog:
         params.append("-a")
 
-    os.chdir("everyday")
+    os.chdir("blog")
     subprocess.call(params)
     os.chdir("..")
 
