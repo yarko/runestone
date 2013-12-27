@@ -11,18 +11,24 @@ sys.path.insert(0, os.path.abspath('../modules'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.mathjax',
-              'luther.sphinx.video',
-              'luther.sphinx.reveal',
-              'luther.sphinx.poll',
-              'luther.sphinx.tabbedStuff',
-              'luther.sphinx.disqus',
-              'luther.sphinx.codelens',
-              'luther.sphinx.activecode',
-              'luther.sphinx.assess',
-              'luther.sphinx.animation',
-              'luther.sphinx.meta',
-              'gatech.parsons']
+extensions = [
+    'sphinx.ext.todo',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.graphiz',
+    # this is from runestone:
+    'sphinx.ext.mathjax',
+    'luther.sphinx.video',
+    'luther.sphinx.reveal',
+    'luther.sphinx.poll',
+    'luther.sphinx.tabbedStuff',
+    'luther.sphinx.disqus',
+    'luther.sphinx.codelens',
+    'luther.sphinx.activecode',
+    'luther.sphinx.assess',
+    'luther.sphinx.animation',
+    'luther.sphinx.meta',
+    'gatech.parsons',
+]
 
 
 # The suffix of source filenames.
@@ -32,8 +38,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'<ENTER YOUR PROJECT NAME HERE>' # e.g. How To Think Like a Computer Scientist
-copyright = u'<ENTER YOUR COPYRIGHT NOTICE HERE>' # e.g. "2013, Brad Miller and David Ranum"
+project = u'Software & Systems' # e.g. How To Think Like a Computer Scientist
+copyright = u'2013-2014, Yarko Tymciurak2013-2014'  # e.g. "2013, Brad Miller and David Ranum"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -51,10 +57,10 @@ html_theme = 'sphinx_bootstrap'
 # Theme options are theme-specific and customize the look and feel of a theme
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "<INSERT YOUR PROJECT NAME OR OTHER TITLE HERE>",
+    'navbar_title': "Research Computing",
 
     # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "Chapters",
+    'navbar_site_name': "Blog",
 
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
@@ -87,10 +93,10 @@ html_theme_path = ["_templates"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = '<INSERT YOUR PROJECT NAME HERE>'
+html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='<INSERT YOUR PROJECT NAME OR OTHER SHORT TITLE HERE>'
+html_short_title ='RCG / Yarko'
 
 # Logo is currently included as CSS background in default layout file. If you remove
 # it there, you should specify an alternative image here.
@@ -122,4 +128,5 @@ html_show_sphinx = True
 html_show_copyright = True
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PythonCoursewareProjectdoc'
+htmlhelp_basename = 'RCG-Yarko'
+

@@ -1,6 +1,6 @@
 
 =====================
-This Is A New Project
+Software & Systems
 =====================
 
 .. Here is were you specify the content and order of your new book.
@@ -14,23 +14,21 @@ This Is A New Project
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
-SECTION 1: A Random Section
+Topics of Interest
 :::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   functions.rst
-   DataStructures/queues.rst
+   topics/*
 
 
-SECTION 2: Another Random Section
-:::::::::::::::::::::::::::::::::
+Short Posts (blog)
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   morecontent.rst
-   words.rst
-   somestuff.rst
-   MoreThings/apples.rst
+   posts/*
